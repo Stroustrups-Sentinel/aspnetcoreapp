@@ -20,3 +20,16 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.font-butler {
+  font-family: 'Butler';
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-borel{
+  font-family: 'Borel';
+  font-weight: normal;
+  font-style: normal;
+
+}
