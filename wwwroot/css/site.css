@@ -8,7 +8,11 @@ html {
   }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
@@ -27,9 +31,42 @@ body {
   font-style: normal;
 }
 
-.font-borel{
+.font-borel {
   font-family: 'Borel';
   font-weight: normal;
   font-style: normal;
 
+}
+
+
+.color-primary {
+  color: #040E1B;
+}
+
+.bg-primary {
+  background-color: #040E1B;
+}
+
+.color-secondary{
+  color: #17536D;
+}
+
+.color-accent{
+  color: #967039;
+}
+
+.bg-accent{
+  background-color: #967039;
+}
+
+.bg-secondary{
+  background-color: #17536D;
+}
+
+.color-text {
+  color: #FFFCE9;
+}
+
+.bg-text {
+  background-color: #FFFCE9;
 }
