@@ -11,6 +11,7 @@
     - > liked the error handling and the good folder structure.
 
 3. Finally, now lets get to the main event, [`Getting Started with MVC`](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-7.0&tabs=visual-studio) 
+    - > Welp, turns out i need to generate another codebase for the MVC, i guess let me have some fun with `Blazor` then move on to next
 
 
 ---
