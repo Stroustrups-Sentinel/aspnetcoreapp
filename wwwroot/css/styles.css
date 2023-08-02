@@ -1,7 +1,10 @@
-:root{
-	--blueActive:  #17536D;
-	--blueNotActive: #040E1B;
-	--blueBoxShadow: 0px -2px 25px #FFFCE9;
+:root {
+	--blueActive: #040E1B;
+	--blueNotActive: #17536d73;
+	--blueBoxShadow: 0px -2px 25px #17536daf;
+
+	--ivory: #FFFCE9;
+	--gold: #967039;
 }
 
 /* body{
@@ -15,73 +18,83 @@
 	background-color: rgb(44,44,55);
 } */
 
-.numbers{
+.numbers {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	background-color: var(--ivory);
+	border: var(--blueNotActive) dashed;
+	border-radius: .5rem;
+	padding: .25rem;
 }
 
-.colon{
-	font-size: 8.5pt;
-	color: var(--blueActive);
+.colon {
+	font-size: 85pt;
+	color: var(--blueNotActive);
+	
 }
 
-.number{
-	width: 25px;
+.number {
+	width: 250px;
 	display: flex;
 	justify-content: space-around;
+	/* border: orchid dotted; */
 }
 
-.digit{
+.digit {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 10.0px;
+	/* width: 100px; */
+	padding-right: .5rem;
 }
 
-.line{
+.line {
 	display: block;
 	background-color: var(--blueNotActive);
 }
 
 
-.line-horizontal{
-	width: 10.0px;
-	height: 1.0px;
+.line-horizontal {
+	width: 65px;
+	height: 1rem;
+	/* border-radius: .25rem; */
 }
 
-.line-vertical{
-	width: 1.0px;
-	height: 10.0px;
+.line-vertical {
+	width: 1rem;
+	height: 45px;
+	/* border-radius: .25rem; */
+	
 }
 
 
 /*Lighting up the correct lines to make the numbers.*/
 
 /*0*/
-.num0 .line-top, 
-.num0 .line-right-top, 
-.num0 .line-left-top, 
-.num0 .line-right-bottom, 
-.num0 .line-left-bottom, 
+.num0 .line-top,
+.num0 .line-right-top,
+.num0 .line-left-top,
+.num0 .line-right-bottom,
+.num0 .line-left-bottom,
 .num0 .line-bottom,
 
 /*1*/
-.num1 .line-right-top, 
+.num1 .line-right-top,
 .num1 .line-right-bottom,
 
 /*2*/
-.num2 .line-top, 
-.num2 .line-right-top, 
-.num2 .line-middle, 
-.num2 .line-left-bottom, 
+.num2 .line-top,
+.num2 .line-right-top,
+.num2 .line-middle,
+.num2 .line-left-bottom,
 .num2 .line-bottom,
 
 /*3*/
-.num3 .line-top, 
-.num3 .line-right-top, 
-.num3 .line-middle, 
-.num3 .line-right-bottom, 
+.num3 .line-top,
+.num3 .line-right-top,
+.num3 .line-middle,
+.num3 .line-right-bottom,
 .num3 .line-bottom,
 
 /*4*/
@@ -90,11 +103,11 @@
 .num4 .line-left-top,
 .num4 .line-right-bottom,
 
-/*5*/ 
-.num5 .line-top, 
-.num5 .line-left-top, 
-.num5 .line-middle, 
-.num5 .line-right-bottom, 
+/*5*/
+.num5 .line-top,
+.num5 .line-left-top,
+.num5 .line-middle,
+.num5 .line-right-bottom,
 .num5 .line-bottom,
 
 /*6*/
@@ -106,31 +119,36 @@
 .num6 .line-bottom,
 
 /*7*/
-.num7 .line-top, 
-.num7 .line-right-top, 
+.num7 .line-top,
+.num7 .line-right-top,
 .num7 .line-right-bottom,
 
 /*8*/
 .num8 .line,
 
 /*9*/
-.num9 .line-top, 
-.num9 .line-left-top, 
+.num9 .line-top,
+.num9 .line-left-top,
 .num9 .line-middle,
 .num9 .line-right-top,
 .num9 .line-right-bottom,
-.num9 .line-bottom
-{
+.num9 .line-bottom {
 	background-color: var(--blueActive);
 	box-shadow: var(--blueBoxShadow);
+	/* border: var(--ivory) solid; */
 }
 
 
 /*Make 0, 1, 4, and 7 use corners when lighting up too*/
-.num0 .line-right-top::after, .num0 .line-left-top::after,
-.num1 .line-right-bottom::after, .num1 .line-right-top::after,
-.num4 .line-right-bottom::after, .num4 .line-right-top::after,.num4 .line-left-top::after,
-.num7 .line-right-bottom::after, .num7 .line-right-top::after{
+.num0 .line-right-top::after,
+.num0 .line-left-top::after,
+.num1 .line-right-bottom::after,
+.num1 .line-right-top::after,
+.num4 .line-right-bottom::after,
+.num4 .line-right-top::after,
+.num4 .line-left-top::after,
+.num7 .line-right-bottom::after,
+.num7 .line-right-top::after {
 	content: '';
 	border-top: 10px solid var(--blueActive);
 	border-bottom: 10px solid var(--blueActive);
@@ -139,14 +157,16 @@
 	display: block;
 }
 
-.inactive .line{
+.inactive .line {
 	background-color: var(--blueNotActive);
 	box-shadow: none;
 }
-.inactive .line::after{
+
+.inactive .line::after {
 	border-color: transparent;
 }
-.colon-second.inactive{
+
+.colon-second.inactive {
 	color: var(--blueNotActive);
 }
 
@@ -154,96 +174,82 @@
 
 
 
-.footer-wrapper{
+.footer-wrapper {
 	display: flex;
 	justify-content: space-between;
-	color: white;
+	color: var(--gold);
 	text-align: center;
+	font-family: 'Borel';
 }
-.footer{
-	width: 25.0px;
+
+.footer {
+	width: 250px;
 	margin-top: 10px;
 	display: flex;
 	justify-content: space-around;
 }
-.footer_number1{
-	
-}
-.footer_number2{
-	
-}
-.footer_number3{
-	
-}
+
+.footer_number1 {}
+
+.footer_number2 {}
+
+.footer_number3 {}
 
 
 
 /*Pretty toggle*/
 input[type=checkbox] {
-  height: 0;
-  width: 0;
-  visibility: hidden;
-  display: none;
+	height: 0;
+	width: 0;
+	visibility: hidden;
+	display: none;
 }
 
 label {
-  cursor: pointer;
-  text-indent: -9999px;
-  width: 5.0px;
-  height: 2.5px;
-  background: var(--blueNotActive);
-  display: block;
-  border: 2px solid white;
-  border-radius: 10.0px;
-  position: relative;
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 50px;
+	height: 25px;
+	background: var(--blueNotActive);
+	display: block;
+	border: 2px solid var(--blueNotActive);
+	border-radius: 100px;
+	position: relative;
+	font-family: 'Borel';
 }
 
 label:after {
-  content: '';
-  position: absolute;
-  top: 4px;
-  left: 3px;
-  width: 13px;
-  height: 13px;
-  background: white;
-  border: 2px solid rgb(44,44,55);
-  border-radius: 90px;
-  transition: 0.3s;
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 3px;
+	width: 13px;
+	height: 13px;
+	background: var(--blueNotActive);
+	border: 2px solid #ffffff;
+	border-radius: 90px;
+	transition: 0.3s;
 }
 
-input:checked + label {
-  background: var(--blueActive);
+input:checked+label {
+	background: var(--blueActive);
 }
 
-input:checked + label:after {
-  left: calc(100% - 5px);
-  transform: translateX(-100%);
+input:checked+label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
 }
 
 
 
 
 /*AM PM*/
-.ampm-wrapper{
+.ampm-wrapper {
 	height: 100%;
 }
-.ampm{
-	color: var(--blueActive);
-/*	font-size: 50pt;*/
+
+.ampm {
+	color: var(--gold);
+	font-size: 2rem;
+	font-family: 'Borel';
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
