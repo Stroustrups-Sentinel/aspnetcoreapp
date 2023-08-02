@@ -4,19 +4,19 @@
   --clock-size: 300px;
 }
 
-html,
+/* html,
 body {
   height: 100%;
-}
+} */
 
-body {
+/* body {
   margin: 0;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
   background: var(--background-color);
-}
+} */
 
 .clock {
   max-width: var(--clock-size);

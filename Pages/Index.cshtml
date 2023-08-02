@@ -24,13 +24,25 @@
         <div class=" col-6">
 
             <div class="col">
-                <div class="row-6 rounded bg-primary">
-                    <div class="clock-container">
-                        <div class="circle"></div>
-                        <div class="circle"></div>
+                <div class="row-6 rounded">
+                    <div class="clock-container  rounded p-2">
 
-                        <div class="bg-accent">
-                            
+                        <div class="bg-text p-4 rounded w-100 shadow" align="center">
+                            <link rel="stylesheet" href="~/css/uptime.css">
+                            <svg class="clock rounded p-2 bg-primary shadow" viewBox="0 0 100 100">
+                                <defs>
+                                    <path id="path" d="M50,12a38,38 0 1,1 0,76a38,38 0 1,1 0,-76" />
+                                </defs>
+                                <path class="hand hours" d="M50 25 V50" />
+                                <path class="hand minutes" d="M50 14 V50" />
+                                <path class="hand seconds" d="M50 3 V50" />
+                                <text class="hour-marks" font-size="5" font-family="sans-serif" letter-spacing="-0.4"
+                                    text-anchor="middle" />
+                                <g class="second-marks" />
+                                <g class="minute-marks" />
+                            </svg>
+
+                            <script src="~/js/uptime.js"></script>
                         </div>
                     </div>
                     <script src="~/clock.js"></script>
