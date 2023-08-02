@@ -8,19 +8,109 @@
     <br>
     <h1 class="display-4">Welcome</h1>
     <p>Hello, world! & Hello ASP.NET, 
-        <br />The time on the server is @DateTime.Now , now that we're here.
-        <br />lets have the "time butler" serve us the time.     
+        <br />The time on the server is @DateTime.Now , now that you're here.
+    <br />let me the "time butler" serve you the time.      
     </p>
 </div>
 
 <div class="container">
-    <div class="bg-primary">
-        <img src="~/background.jfif" width="720" alt="butler-background">
+    <div class="bg-prima ry p-2 shadow rounded">
+        <img class="rounded m-2" src="~/background.jfif" width="720" alt="butler-background">
+        <div>
+            <div id="server-clock" class="bg-accent p-2 rounded">
+                <div>
+                    <div class="wrapper">
+  <div class="numbers">
+    <div class="number num-hour">
+      <div class="digit digit1">
+        <div class="line line-top line-horizontal"></div>
+        <div class="line line-left-top line-vertical"></div>
+        <div class="line line-right-top line-vertical"></div>
+        <div class="line line-middle line-horizontal"></div>
+        <div class="line line-left-bottom line-vertical"></div>
+        <div class="line line-right-bottom line-vertical"></div>
+        <div class="line line-bottom line-horizontal"></div>          
+      </div>
+      <div class="digit digit2">
+        <div class="line line-top line-horizontal"></div>
+        <div class="line line-left-top line-vertical"></div>
+        <div class="line line-right-top line-vertical"></div>
+        <div class="line line-middle line-horizontal"></div>
+        <div class="line line-left-bottom line-vertical"></div>
+        <div class="line line-right-bottom line-vertical"></div>
+        <div class="line line-bottom line-horizontal"></div>
+      </div>
+    </div>
+    <span class="colon colon-minute">:</span>
+    <div class="number num-minute">
+      <div class="digit digit1">
+        <div class="line line-top line-horizontal"></div>
+        <div class="line line-left-top line-vertical"></div>
+        <div class="line line-right-top line-vertical"></div>
+        <div class="line line-middle line-horizontal"></div>
+        <div class="line line-left-bottom line-vertical"></div>
+        <div class="line line-right-bottom line-vertical"></div>
+        <div class="line line-bottom line-horizontal"></div>
+      </div>
+      <div class="digit digit2">
+        <div class="line line-top line-horizontal"></div>
+        <div class="line line-left-top line-vertical"></div>
+        <div class="line line-right-top line-vertical"></div>
+        <div class="line line-middle line-horizontal"></div>
+        <div class="line line-left-bottom line-vertical"></div>
+        <div class="line line-right-bottom line-vertical"></div>
+        <div class="line line-bottom line-horizontal"></div>
+      </div>
+    </div>
+    <span class="colon colon-second">:</span>
+    <div class="number num-second">
+      <div class="digit digit1">
+        <div class="line line-top line-horizontal"></div>
+        <div class="line line-left-top line-vertical"></div>
+        <div class="line line-right-top line-vertical"></div>
+        <div class="line line-middle line-horizontal"></div>
+        <div class="line line-left-bottom line-vertical"></div>
+        <div class="line line-right-bottom line-vertical"></div>
+        <div class="line line-bottom line-horizontal"></div>
+      </div>
+      <div class="digit digit2">
+        <div class="line line-top line-horizontal"></div>
+        <div class="line line-left-top line-vertical"></div>
+        <div class="line line-right-top line-vertical"></div>
+        <div class="line line-middle line-horizontal"></div>
+        <div class="line line-left-bottom line-vertical"></div>
+        <div class="line line-right-bottom line-vertical"></div>
+        <div class="line line-bottom line-horizontal"></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-wrapper">
+    <div class="footer footer_number1">
+      <span>12h</span>
+      <input type="checkbox" class="toggle-12-24" id="switch1"> 
+      <label for="switch1"></label>
+      <span>24h</span>
+    </div>
+    <div class="footer footer_number2">
+      
+    </div>
+    <div class="footer footer_number3">
+      <span>Off</span>
+      <input type="checkbox" checked="checked" class="toggle-second" id="switch3"> 
+      <label for="switch3"></label>
+      <span>On</span>
+    </div>
+  </div>
+</div>
+<div class="ampm-wrapper">
+  <span class="ampm"></span>
+</div>
+                </div>
+            </div>
+            <div id="local-clock" class="bg-primary p-2 rounded">clock-2</div>
+        </div>
         
     </div>
-        <div class="col-8">
-        <img src="~/background.jfif" width="720" alt="butler-background">
         
-    </div>
 </div>
 
