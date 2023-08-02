@@ -1,4 +1,4 @@
-# ASP.NET STARTER REPO
+# ASP.NET STARTER REPO [Archived 🗄️]
 - using content from [`Microsoft Learn`](https://learn.microsoft.com/en-us/aspnet/core/getting-started/?view=aspnetcore-7.0&tabs=windows)
 
 <br>
