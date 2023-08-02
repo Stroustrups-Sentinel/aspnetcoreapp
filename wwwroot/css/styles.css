@@ -1,7 +1,7 @@
 :root{
-	--blueActive:  rgba(140,225,255,1);
-	--blueNotActive: rgba(90,225,255,0.025);
-	--blueBoxShadow: 0px -2px 25px rgba(90,255,255,0.4);
+	--blueActive:  #17536D;
+	--blueNotActive: #040E1B;
+	--blueBoxShadow: 0px -2px 25px #FFFCE9;
 }
 
 /* body{
@@ -22,12 +22,12 @@
 }
 
 .colon{
-	font-size: 85pt;
+	font-size: 8.5pt;
 	color: var(--blueActive);
 }
 
 .number{
-	width: 250px;
+	width: 25px;
 	display: flex;
 	justify-content: space-around;
 }
@@ -36,7 +36,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	width: 100px;
+	width: 10.0px;
 }
 
 .line{
@@ -46,13 +46,13 @@
 
 
 .line-horizontal{
-	width: 100px;
-	height: 10px;
+	width: 10.0px;
+	height: 1.0px;
 }
 
 .line-vertical{
-	width: 10px;
-	height: 100px;
+	width: 1.0px;
+	height: 10.0px;
 }
 
 
@@ -161,7 +161,7 @@
 	text-align: center;
 }
 .footer{
-	width: 250px;
+	width: 25.0px;
 	margin-top: 10px;
 	display: flex;
 	justify-content: space-around;
@@ -189,12 +189,12 @@ input[type=checkbox] {
 label {
   cursor: pointer;
   text-indent: -9999px;
-  width: 50px;
-  height: 25px;
+  width: 5.0px;
+  height: 2.5px;
   background: var(--blueNotActive);
   display: block;
   border: 2px solid white;
-  border-radius: 100px;
+  border-radius: 10.0px;
   position: relative;
 }
 
@@ -225,11 +225,11 @@ input:checked + label:after {
 
 /*AM PM*/
 .ampm-wrapper{
-	height: 300px;
+	height: 100%;
 }
 .ampm{
 	color: var(--blueActive);
-	font-size: 50pt;
+/*	font-size: 50pt;*/
 }
 
 
