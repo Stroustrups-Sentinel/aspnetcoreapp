@@ -13,6 +13,14 @@
 3. Finally, now lets get to the main event, [`Getting Started with MVC`](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-7.0&tabs=visual-studio) 
     - > Welp, turns out i need to generate another codebase for the MVC, let me have some fun with [`Razor`](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-7.0&tabs=visual-studio-code) then move on to next one.
 
+> And now im finally done, well i got carried away , but i guess its a good sign of the good stuff and a beginner's experience of the framework, and to that bye bye and let's go !
+
+
+<div align="center" >
+
+![hej](./wwwroot/logo.svg)
+
+</div>
 
 ---
 
